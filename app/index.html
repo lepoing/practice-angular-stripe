@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Practice Angular Stripe</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- css -->
+  <link rel="stylesheet" href="bower_components/foundation/css/normalize.css"/>
+  <link rel="stylesheet" href="bower_components/foundation/css/foundation.css"/>
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <ul class="menu">
+    <li><a href="#/stripe-payment">Stripe Payment</a></li>
+  </ul>
+
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <div ng-view></div>
+
+  <!-- Stripe.js -->
+  <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+
+  <!-- Bower Install -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-payments/lib/angular-payments.js"></script>
+
+  <!-- Other libs -->
+  <script src="http://pineconellc.github.io/angular-foundation/mm-foundation-tpls-0.3.1.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/spin.js/2.0.1/spin.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-spinner/0.5.1/angular-spinner.js"></script>
+
+  <!-- app -->
+  <script src="app.js"></script>
+  <script src="modules/stripe-payment/stripe-payment.js"></script>
+  <script src="modules/stripe-payment/stripe-payment-controller.js"></script>
+  <script src="modules/stripe-payment/stripe-payment-factory.js"></script>
+</body>
+</html>

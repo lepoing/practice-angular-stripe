@@ -1,0 +1,15 @@
+{
+  "name": "practice-angular-stripe",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.4.0",
+    "angular-route": "~1.4.0",
+    "angular-loader": "~1.4.0",
+    "angular-mocks": "~1.4.0",
+    "angular-payments": "2472bc9befa25678",
+    "angular-animate": "~1.5.0",
+    "foundation": "~5.5.3"
+  }
+}
